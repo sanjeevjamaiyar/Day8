@@ -11,7 +11,7 @@ load_dotenv()
 class PDFSummarizer:
     def __init__(self):
         self.llm = ChatOpenAI(
-            model="openai/gpt-4.1-mini",
+            model = "dots-studio/dots-3-note-preview:free",
             temperature=0.3,
             openai_api_key=os.getenv("OPENROUTER_API_KEY"),
             openai_api_base="https://openrouter.ai/api/v1",
